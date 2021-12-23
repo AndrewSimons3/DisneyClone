@@ -62,6 +62,8 @@ const CTA = styled.div`
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  transition-timing-function: ease-out;
+  transition: opacity 0.2s;
 `
 
 const CTALogoOne = styled.img`
