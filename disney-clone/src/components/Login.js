@@ -7,7 +7,10 @@ const Login = (props) => {
 		<Container>
 			<Content>
 				<CTA>
-					<CTALogoOne src='/images/cta-logo-one.svg' />
+					<CTALogoOne src='/images/cta-logo-one.svg' alt="" />
+					<SignUp>GET ALL THERE</SignUp>
+          <Description>Stream now. Terms Apply</Description>
+          <CTALogoTwo src='/images/cta-logo-two.png' alt=""/>
 				</CTA>
 				<BgImage />
 			</Content>
@@ -16,17 +19,17 @@ const Login = (props) => {
 };
 
 const BgImage = styled.div`
-height: 100%;
-background-position: top;
-background-size: cover;
-background-repeat: no-repeat;
-position: absolute;
-top: 0;
-right: 0;
-left: 0;
-z-index: -1;
-background-image: url('/images/login-background.jpg');
-`
+	height: 100%;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: -1;
+	background-image: url('/images/login-background.jpg');
+`;
 
 const Container = styled.section`
 	overflow: hidden;
@@ -51,27 +54,51 @@ const Content = styled.div`
 `;
 
 const CTA = styled.div`
-  margin-bottom: 2vw;
-  max-width: 650px;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 0;
-  align-items: center;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  transition-timing-function: ease-out;
-  transition: opacity 0.2s;
-`
+	margin-bottom: 2vw;
+	max-width: 650px;
+	min-height: 1px;
+	display: block;
+	width: 100%;
+`;
 
 const CTALogoOne = styled.img`
-  margin-bottom: 12px;
-  max-width: 600px;
-  min-height: 1px;
-  display: block;
-  width: 100%;
-`
+	margin-bottom: 12px;
+	min-height: 1px;
+	display: block;
+	width: 100%;
+`;
+
+const SignUp = styled.a`
+	display: block;
+	font-weight: bold;
+	color: #f9f9f9;
+	background-color: #0063e5;
+	margin-bottom: 28px;
+	width: 100%;
+	letter-spacing: 1.5px;
+	font-size: 18px;
+	padding: 16.5px 0;
+	border: 1px solid transparent;
+	border-radius: 4px;
+
+	&:hover {
+		background-color: #0483ee;
+	}
+`;
+
+const Description = styled.p`
+	color: hsla(0, 0%, 95.3%, 1);
+	font-size: 11px;
+  margin: 0 0 24px;
+  line-height: 1.5em;
+`;
+
+const CTALogoTwo = styled.img`
+max-width: 600px;
+	margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+	width: 100%;
+`;
 
 export default Login;
