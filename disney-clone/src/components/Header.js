@@ -8,6 +8,7 @@ import {
 	selectUserPhoto,
 	selectUserLoginDetails,
 	setUserLoginDetails,
+	setSignOutState,
 } from '../features/user/userSlice';
 
 const Header = (props) => {
@@ -26,15 +27,22 @@ const Header = (props) => {
 	}, [userName]);
 
 	const handleAuth = () => {
-		auth
-			.signInWithPopup(provider)
-			.then((result) => {
-				setUser(result.user);
-			})
-			.catch((error) => {
-				alert(error.message);
-			});
-	};
+		if (!userName) {
+			auth
+				.signInWithPopup(provider)
+				.then((result) => {
+					setUser(result.user);
+				})
+				.catch((error) => {
+					alert(error.message);
+				});
+		} else if (userName) {
+			auth.signOut().then(() => {
+				dispatch(setSignOutState())
+				navigate('/')
+			}).catch((err) => alert(err.message));
+		}
+	}
 
 	const setUser = (user) => {
 		dispatch(
