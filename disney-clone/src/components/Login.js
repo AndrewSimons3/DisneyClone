@@ -8,7 +8,7 @@ const Login = (props) => {
 			<Content>
 				<CTA>
 					<CTALogoOne src='/images/cta-logo-one.svg' alt="" />
-					<SignUp>GET ALL THERE</SignUp>
+					<SignUp>GET THE BUNDLE</SignUp>
           <Description>Stream now. Terms Apply</Description>
           <CTALogoTwo src='/images/cta-logo-two.png' alt=""/>
 				</CTA>
