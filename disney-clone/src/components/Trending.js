@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 import React from 'react';
 
-const Recommends = () => {
+const Trending = () => {
 	return (
 		<Container>
-			<h4>Recommended for you</h4>
+			<h4>Trending</h4>
 			<Content>
 				<Wrap>
 					<Link to='/'>
@@ -81,4 +81,4 @@ const Wrap = styled.div`
 	}
 `;
 
-export default Recommends;
+export default Trending;
