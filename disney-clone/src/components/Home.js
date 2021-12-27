@@ -8,6 +8,7 @@ const Home = () => {
 		<Container>
       <ImgSlider />
       <Viewers />
+      <Recommends />
 		</Container>
 	);
 };
