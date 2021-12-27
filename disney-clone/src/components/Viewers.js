@@ -20,6 +20,10 @@ padding: 30px 0px 26px;
 display: grid;
 grid-gap: 25px;
 grid-template-columns: repeat(5, minmax(0, 1fr));
+
+@media (max-width: 768px) {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
 `
 
 export default Viewers;
