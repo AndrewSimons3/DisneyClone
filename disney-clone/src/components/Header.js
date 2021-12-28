@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import {
 	selectUserName,
 	selectUserPhoto,
-	selectUserLoginDetails,
 	setUserLoginDetails,
 	setSignOutState,
 } from '../features/user/userSlice';
