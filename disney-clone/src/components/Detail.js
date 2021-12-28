@@ -80,6 +80,7 @@ const Background = styled.div`
 		height: 100vh;
 		@media (max-width: 768px) {
 			width: initial;
+			
 		}
 	}
 `;
