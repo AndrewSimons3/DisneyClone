@@ -141,7 +141,7 @@ const Player = styled.button`
 
 	@media (max-width: 768px) {
 		height: 45px;
-		padding: 0px 22px;
+		padding: 0px 17px;
 		font-size: 12px;
 		margin: 0px 10px 0px 0px;
 
@@ -185,6 +185,10 @@ const AddList = styled.div`
 			width: 2px;
 		}
 	}
+
+	@media (max-width: 768px) {
+		margin-right: 8px;
+	}
 `;
 
 const GroupWatch = styled.div`
@@ -207,6 +211,8 @@ const GroupWatch = styled.div`
 	img {
 		width: 100%;
 	}
+
+	
 `;
 
 const SubTitle = styled.div`
