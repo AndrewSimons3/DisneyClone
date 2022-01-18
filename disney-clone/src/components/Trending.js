@@ -10,7 +10,7 @@ const Trending = () => {
 
 	return (
 		<Container>
-			<h4>New to Disney+</h4>
+			<h4>Trending Right Now</h4>
 			<Content>
 				{movies &&
 					movies.map((movie, key) => (

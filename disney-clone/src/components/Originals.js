@@ -10,7 +10,7 @@ const Originals = () => {
 
 	return (
 		<Container>
-			<h4>New to Disney+</h4>
+			<h4>Disney Originals</h4>
 			<Content>
 				{movies &&
 					movies.map((movie, key) => (
